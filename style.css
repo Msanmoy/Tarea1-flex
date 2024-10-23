@@ -72,12 +72,14 @@ section ul {
 }
 
 section ul li {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
     margin: 0;
     color: white;
-    flex-grow: 1;
     text-align: center;
-    height: 80px;
-    align-content: center;
        
 }
 
@@ -119,4 +121,65 @@ footer p {
 color: white;
 }
 
+/* VERSIÓN ESCRITORIO */
+@media screen and (min-width: 768px){
 
+/* BODY */
+
+body {
+    display: flex;
+    background-color: #ff9966;
+    background: linear-gradient(to right, #ff5e62, #ff9966);
+    min-height: 100vh;
+}
+
+#contenedor {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    flex-direction: row;
+
+}
+
+header h1 {
+    flex-grow: 1;
+}
+
+header ul {
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+main section {
+    flex-grow: 3;
+    flex-basis: content;
+    margin-right: 20px;
+    margin-top: 0px;    
+}
+
+main aside {
+    flex-grow: 2;
+    flex-basis: content;
+}
+
+
+/* EL FOOTER NO LO HE TOCADO YA QUE AL TENER SOLO UN ELEMENTO SE CENTRA USANDO EL FLEX USADO PARA MOVIL */
+
+
+}
